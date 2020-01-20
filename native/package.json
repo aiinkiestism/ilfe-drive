@@ -2,10 +2,10 @@
   "nativescript": {
     "id": "org.nativescript.native",
     "tns-android": {
-      "version": "6.2.0"
+      "version": "6.3.1"
     },
     "tns-ios": {
-      "version": "6.2.0"
+      "version": "6.3.0"
     }
   },
   "description": "NativeScript Application",
@@ -23,23 +23,23 @@
     "@angular/platform-browser": "~8.2.0",
     "@angular/platform-browser-dynamic": "~8.2.0",
     "@angular/router": "~8.2.0",
-    "@nativescript/theme": "~2.2.0",
-    "nativescript-angular": "~8.20.0",
+    "@nativescript/theme": "~2.2.1",
+    "nativescript-angular": "~8.20.3",
     "reflect-metadata": "~0.1.12",
     "rxjs": "^6.4.0",
-    "tns-core-modules": "~6.2.0",
+    "tns-core-modules": "~6.3.0",
     "zone.js": "~0.9.1"
   },
   "devDependencies": {
     "@angular/compiler-cli": "~8.2.0",
     "@ngtools/webpack": "^8.3.23",
+    "atob": "^2.1.2",
     "codelyzer": "~4.5.0",
-    "nativescript-dev-webpack": "~1.3.0",
+    "nativescript-dev-webpack": "~1.4.0",
     "node-sass": "^4.7.1",
-    "serialize-javascript": "^2.1.2",
     "tslint": "~5.19.0",
     "typescript": "~3.5.3"
   },
-  "gitHead": "a6fec076a20f898feabb4466a2c411158c18a100",
+  "gitHead": "fa98f785df3fba482e5e2a0c76f4be1fa6dc7a14",
   "readme": "NativeScript Application"
 }

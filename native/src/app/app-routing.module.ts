@@ -6,28 +6,34 @@ import { NativeScriptRouterModule } from "nativescript-angular/router";
 const routes: Routes = [
     {
         path: "",
-        redirectTo: "/(homeTab:home/default//browseTab:browse/default//searchTab:search/default)",
+        redirectTo: "/(timelineTab:timeline/default//searchTab:search/default//driveTab:drive/default//profileTab:profile/default)",
         pathMatch: "full"
     },
 
     {
-        path: "home",
+        path: "timeline",
         component: NSEmptyOutletComponent,
-        loadChildren: () => import("~/app/home/home.module").then((m) => m.HomeModule),
-        outlet: "homeTab"
-    },
-    {
-        path: "browse",
-        component: NSEmptyOutletComponent,
-        loadChildren: () => import("~/app/browse/browse.module").then((m) => m.BrowseModule),
-        outlet: "browseTab"
+        loadChildren: () => import("~/app/timeline/timeline.module").then((m) => m.TimelineModule),
+        outlet: "timelineTab"
     },
     {
         path: "search",
         component: NSEmptyOutletComponent,
         loadChildren: () => import("~/app/search/search.module").then((m) => m.SearchModule),
         outlet: "searchTab"
-    }
+    },
+    {
+        path: "drive",
+        component: NSEmptyOutletComponent,
+        loadChildren: () => import("~/app/drive/drive.module").then((m) => m.DriveModule),
+        outlet: "driveTab"
+    },
+    {
+        path: "profile",
+        component: NSEmptyOutletComponent,
+        loadChildren: () => import("~/app/profile/profile.module").then((m) => m.ProfileModule),
+        outlet: "profileTab"
+    },
 ];
 
 @NgModule({
