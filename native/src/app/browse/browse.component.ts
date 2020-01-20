@@ -1,12 +1,12 @@
 import { Component, OnInit } from "@angular/core";
 
 @Component({
-    selector: "Drive",
-    templateUrl: "./drive.component.html"
+    selector: "Browse",
+    templateUrl: "./browse.component.html"
 })
-export class DriveComponent implements OnInit {
+export class BrowseComponent implements OnInit {
     constructor() {
-        // Use the constructor to inject services.
+        // Use the component constructor to inject providers.
     }
 
     ngOnInit(): void {

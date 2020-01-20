@@ -2,16 +2,14 @@ import { NgModule } from "@angular/core";
 import { Routes } from "@angular/router";
 import { NativeScriptRouterModule } from "nativescript-angular/router";
 
-import { ProfileComponent } from "./profile.component";
-import { ItemDetailComponent } from "./item-detail/item-detail.component";
+import { SearchComponent } from "./search.component";
 
 const routes: Routes = [
-    { path: "default", component: ProfileComponent },
-    { path: "item/:id", component: ItemDetailComponent }
+    { path: "default", component: SearchComponent }
 ];
 
 @NgModule({
     imports: [NativeScriptRouterModule.forChild(routes)],
     exports: [NativeScriptRouterModule]
 })
-export class ProfileRoutingModule { }
+export class SearchRoutingModule { }

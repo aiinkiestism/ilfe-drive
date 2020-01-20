@@ -5,44 +5,28 @@
                 Note TabStripItem will only accept single Label and/or single Image elements that it
                 will "adopt"; any other layout elements you try to specify will be ignored
             -->
-            <Label text="profile"></Label>
+            <Label text="Home"></Label>
             <Image src="font://&#xf015;" class="fas t-36"></Image>
         </TabStripItem>
         <TabStripItem class="navigation__item">
-            <Label text="talk"></Label>
+            <Label text="Browse"></Label>
             <Image src="font://&#xf1ea;" class="far t-36"></Image>
         </TabStripItem>
         <TabStripItem class="navigation__item">
-            <Label text="drive"></Label>
-            <Image src="font://&#xf002;" class="fas t-36"></Image>
-        </TabStripItem>
-        <TabStripItem class="navigation__item">
-            <Label text="notification"></Label>
-            <Image src="font://&#xf002;" class="fas t-36"></Image>
-        </TabStripItem>
-        <TabStripItem class="navigation__item">
-            <Label text="timeline"></Label>
+            <Label text="Search"></Label>
             <Image src="font://&#xf002;" class="fas t-36"></Image>
         </TabStripItem>
     </TabStrip>
 
     <TabContentItem>
-        <page-router-outlet name="profileTab"></page-router-outlet>
+        <page-router-outlet name="homeTab"></page-router-outlet>
     </TabContentItem>
 
     <TabContentItem>
-        <page-router-outlet name="talkTab"></page-router-outlet>
+        <page-router-outlet name="browseTab"></page-router-outlet>
     </TabContentItem>
 
     <TabContentItem>
-        <page-router-outlet name="driveTab"></page-router-outlet>
-    </TabContentItem>
-
-    <TabContentItem>
-        <page-router-outlet name="notificationTab"></page-router-outlet>
-    </TabContentItem>
-
-    <TabContentItem>
-        <page-router-outlet name="timelineTab"></page-router-outlet>
+        <page-router-outlet name="searchTab"></page-router-outlet>
     </TabContentItem>
 </BottomNavigation>

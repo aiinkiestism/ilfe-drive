@@ -6,39 +6,27 @@ import { NativeScriptRouterModule } from "nativescript-angular/router";
 const routes: Routes = [
     {
         path: "",
-        redirectTo: "/(profileTab:profile/default//talkTab:talk/default//driveTab:drive//default/notificationTab:notification//default/timelineTab:timeline/default)",
+        redirectTo: "/(homeTab:home/default//browseTab:browse/default//searchTab:search/default)",
         pathMatch: "full"
     },
 
     {
-        path: "profile",
+        path: "home",
         component: NSEmptyOutletComponent,
-        loadChildren: () => import("~/app/profile/profile.module").then((m) => m.ProfileModule),
-        outlet: "profileTab"
+        loadChildren: () => import("~/app/home/home.module").then((m) => m.HomeModule),
+        outlet: "homeTab"
     },
     {
-        path: "talk",
+        path: "browse",
         component: NSEmptyOutletComponent,
-        loadChildren: () => import("~/app/talk/talk.module").then((m) => m.TalkModule),
-        outlet: "talkTab"
+        loadChildren: () => import("~/app/browse/browse.module").then((m) => m.BrowseModule),
+        outlet: "browseTab"
     },
     {
-        path: "drive",
+        path: "search",
         component: NSEmptyOutletComponent,
-        loadChildren: () => import("~/app/drive/drive.module").then((m) => m.DriveModule),
-        outlet: "driveTab"
-    },
-    {
-        path: "notification",
-        component: NSEmptyOutletComponent,
-        loadChildren: () => import("~/app/notification/notification.module").then((m) => m.NotificationModule),
-        outlet: "notificationTab"
-    },
-    {
-        path: "timeline",
-        component: NSEmptyOutletComponent,
-        loadChildren: () => import("~/app/timeline/timeline.module").then((m) => m.TimelineModule),
-        outlet: "timelineTab"
+        loadChildren: () => import("~/app/search/search.module").then((m) => m.SearchModule),
+        outlet: "searchTab"
     }
 ];
 

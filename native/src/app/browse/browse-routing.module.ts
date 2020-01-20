@@ -2,16 +2,14 @@ import { NgModule } from "@angular/core";
 import { Routes } from "@angular/router";
 import { NativeScriptRouterModule } from "nativescript-angular/router";
 
-import { TimelineComponent } from "./timeline.component";
-import { ItemDetailComponent } from "./item-detail/item-detail.component";
+import { BrowseComponent } from "./browse.component";
 
 const routes: Routes = [
-    { path: "timeline", component: TimelineComponent },
-    { path: "item/:id", component: ItemDetailComponent }
+    { path: "default", component: BrowseComponent }
 ];
 
 @NgModule({
     imports: [NativeScriptRouterModule.forChild(routes)],
     exports: [NativeScriptRouterModule]
 })
-export class TimelineRoutingModule { }
+export class BrowseRoutingModule { }

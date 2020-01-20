@@ -3,10 +3,10 @@ import { Component, OnInit } from "@angular/core";
 import { DataService, DataItem } from "../shared/data.service";
 
 @Component({
-    selector: "Notification",
-    templateUrl: "./notification.component.html"
+    selector: "Home",
+    templateUrl: "./home.component.html"
 })
-export class NotificationComponent implements OnInit {
+export class HomeComponent implements OnInit {
     items: Array<DataItem>;
 
     constructor(private _itemService: DataService) { }
