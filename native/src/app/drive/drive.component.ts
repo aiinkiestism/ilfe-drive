@@ -1,16 +1,15 @@
 import { Component, OnInit } from "@angular/core";
 
 @Component({
-    selector: "ns-app",
-    templateUrl: "app.component.html"
+    selector: "Drive",
+    templateUrl: "./drive.component.html"
 })
-export class AppComponent implements OnInit {
-
+export class DriveComponent implements OnInit {
     constructor() {
         // Use the component constructor to inject providers.
     }
 
     ngOnInit(): void {
-        // Init your component properties here.
+        // Use the "ngOnInit" handler to initialize data for the view.
     }
 }
